@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Keka Auto Clock",
+  "version": "1.0",
+  "description": "Auto clock-in/out on Keka attendance page via MacroDroid URL trigger.",
+  "content_scripts": [
+    {
+      "matches": ["https://houseofbluebeans.keka.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
